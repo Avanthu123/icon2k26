@@ -7,9 +7,16 @@ export default function Footer() {
                 <div className="footer-brand">
                     <span className="logo-text">ICON '26</span>
                     <p>Department of Information Technology<br />B.S. Abdur Rahman Crescent Institute of Science and Technology</p>
-                    <div style={{ marginTop: '1rem', display: 'flex', gap: 12 }}>
-                        <span className="tag-pill tag-pill-red">○ CRESCENT</span>
-                        <span className="tag-pill tag-pill-teal">△ 2026</span>
+                    <div style={{ marginTop: '1rem' }}>
+                        <p style={{ color: 'var(--text)', fontFamily: 'var(--font-mono)', fontSize: '0.75rem', letterSpacing: 1.5, textTransform: 'uppercase' }}>
+                            Developed by
+                        </p>
+                        <p style={{ color: 'var(--text)', fontFamily: 'var(--font-mono)', fontSize: '0.8rem', marginTop: '0.35rem' }}>
+                            Kishore Kumar S &mdash; 3rd Year / IT
+                        </p>
+                        <p style={{ color: 'var(--text)', fontFamily: 'var(--font-mono)', fontSize: '0.8rem' }}>
+                            Avanthika A &mdash; Final Year / IT
+                        </p>
                     </div>
                 </div>
 
@@ -25,7 +32,7 @@ export default function Footer() {
             </div>
 
             <div className="footer-bottom">
-                <p>© 2026 ICON '26 — Dept. of IT, B.S. Abdur Rahman Crescent Institute of Science and Technology</p>
+                <p>© 2026 ICON '26</p>
                 <div style={{ display: 'flex', gap: 16, alignItems: 'center' }}>
                     <span className="sym sym-circle" style={{ color: 'var(--primary)' }} />
                     <span className="sym sym-triangle" style={{ color: 'var(--secondary)' }} />

@@ -28,7 +28,7 @@ const technicalEvents = [
         number: 'T02',
         title: 'Paper Prez',
         full: 'Where Ideas Speak Louder Than Words.',
-        color: '#00ffc2',
+        color: '#00ffa697',
         glow: 'rgba(0,255,194,0.6)',
         bg: 'rgba(0,255,194,0.05)',
         border: 'rgba(0,255,194,0.4)',
@@ -273,15 +273,23 @@ function EventCard({ event, idx }) {
                         <p style={{ marginTop: '1.2rem', color: d.color, fontFamily: 'var(--font-mono)', fontSize: '0.75rem', lineHeight: 1.6 }}>{d.cta}</p>
                     </div>
                     <a
-                            href="https://unstop.com"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="btn-primary"
-                            style={{ background: d.color, boxShadow: `0 0 20px ${d.glow}`, fontSize: '0.8rem', padding: '12px 24px', textDecoration: 'none', justifyContent: 'center' }}
-                            onClick={e => e.stopPropagation()}
-                        >
-                            Register on UnStop
-                        </a>
+                        href="https://unstop.com"
+                        target="_blank"
+                        rel="noreferrer"
+                        className="btn-primary"
+                        style={{
+                            background: d.color,
+                            color: d.color === '#22c55e' || d.color === '#ffd700' ? '#000' : '#fff',
+                            boxShadow: `0 0 20px ${d.glow}`,
+                            fontSize: '0.8rem',
+                            padding: '12px 24px',
+                            textDecoration: 'none',
+                            justifyContent: 'center',
+                        }}
+                        onClick={e => e.stopPropagation()}
+                    >
+                        Register on UnStop
+                    </a>
                 </div>
             </div>
         </div>
@@ -351,7 +359,7 @@ export default function EventsPage() {
                     <h2 className="section-title reveal">TECHNICAL <span className="highlight">EVENTS</span></h2>
                     <div className="title-divider reveal"><span className="divider-symbol">○</span></div>
                     <p className="section-subtitle reveal">Code, build, analyse, and design your way to the top.</p>
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.8rem', marginTop: '2rem' }}>
+                    <div className="events-grid" style={{ marginTop: '2rem' }}>
                         {technicalEvents.map((d, i) => (
                             <EventCard key={d.id} event={d} idx={i} />
                         ))}
@@ -365,7 +373,7 @@ export default function EventsPage() {
                     <h2 className="section-title reveal">NON-TECHNICAL <span className="highlight-teal">EVENTS</span></h2>
                     <div className="title-divider reveal"><span className="divider-symbol">△</span></div>
                     <p className="section-subtitle reveal">Stage, strategy, and pure fun — beyond the code editor.</p>
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '1.8rem', marginTop: '2rem' }}>
+                    <div className="events-grid" style={{ marginTop: '2rem' }}>
                         {nonTechnicalEvents.map((d, i) => (
                             <EventCard key={d.id} event={d} idx={i + technicalEvents.length} />
                         ))}

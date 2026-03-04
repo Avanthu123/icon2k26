@@ -115,7 +115,7 @@ export default function TechFusionPage() {
                     <div className="title-divider reveal"><span className="divider-symbol">△</span></div>
                     <p className="section-subtitle reveal">Everything that makes ICON '26 a symposium worth experiencing.</p>
 
-                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem' }}>
+                    <div className="highlights-grid">
                         {highlights.map((h, i) => (
                             <Card3D key={i} className="reveal" style={{ padding: '2rem', cursor: 'default' }}>
                                 <div style={{

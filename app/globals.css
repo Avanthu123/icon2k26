@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Share+Tech+Mono&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&family=Share+Tech+Mono&family=Rajdhani:wght@300;400;500;600;700&family=Geologica:wght@300;400;500;600;700&display=swap');
 
 @font-face {
   font-family: 'Game Of Squids';
@@ -24,7 +24,7 @@
   --border-teal: rgba(0, 255, 194, 0.3);
   --font-title: 'Orbitron', monospace;
   --font-heading: 'Game Of Squids', 'Orbitron', monospace;
-  --font-body: 'Rajdhani', sans-serif;
+  --font-body: 'Geologica', 'Rajdhani', sans-serif;
   --font-mono: 'Share Tech Mono', monospace;
 }
 
@@ -590,6 +590,17 @@ body {
   letter-spacing: 1px;
 }
 
+/* Events & highlights grids */
+.events-grid {
+  display: grid;
+  gap: 1.8rem;
+}
+
+.highlights-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
 /* Scroll reveal animation */
 .reveal {
   opacity: 0;
@@ -720,5 +731,12 @@ body {
 
   .nav-mobile-header {
     display: flex;
+  }
+}
+
+@media (min-width: 900px) {
+  .events-grid,
+  .highlights-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
