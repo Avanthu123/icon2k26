@@ -28,7 +28,7 @@ const technicalEvents = [
         number: 'T02',
         title: 'Paper Prez',
         full: 'Where Ideas Speak Louder Than Words.',
-        color: '#00ffa697',
+        color: '#00ffc2',
         glow: 'rgba(0,255,194,0.6)',
         bg: 'rgba(0,255,194,0.05)',
         border: 'rgba(0,255,194,0.4)',
