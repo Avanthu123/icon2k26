@@ -239,7 +239,7 @@ export default function HomePage() {
       <section className="section">
         <div className="container">
           <h2 className="section-title reveal">
-            READY TO <span className="highlight">COMPETE</span>?
+            Explore
           </h2>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '1.5rem' }}>
