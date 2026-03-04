@@ -94,7 +94,7 @@ export default function IconPage() {
                         <div className="reveal" style={{ display: 'flex', justifyContent: 'center' }}>
                             <Card3D style={{ padding: 0, overflow: 'hidden' }}>
                                 <Image
-                                    src="/photos/about.jpg"
+                                    src="/photos/about.JPG"
                                     alt="ICON '26 overview"
                                     width={600}
                                     height={400}

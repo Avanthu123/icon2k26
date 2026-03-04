@@ -221,7 +221,7 @@ export default function HomePage() {
               {/* Image block outside map */}
               <div className="reveal" style={{ gridColumn: '1 / -1' }}>
                   <Image
-                    src="/photos/home.png"
+                    src="/photos/WhatsApp_Image_2025-01-10_at_11.png"
                     alt="ICON '26 overview"
                     width={800}
                     height={600}
