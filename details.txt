@@ -1,0 +1,536 @@
+1. Global Branding & Metadata
+1.1 Site metadata (browser title, SEO)
+File: layout.js
+
+metadata.title
+Current: Techfusion 26 — IT Department | B.S. Abdur Rahman Crescent
+New: Icon '26 - A National Level Technical Symposium
+metadata.description
+Current: Techfusion 26 is the flagship event of the Department of Information Technology at B.S. Abdur Rahman Crescent Institute of Science and Technology.
+New: ICON, a National-level symposium, is meticulously organized by the professional society "Society of Information Technologists (SIT)," as a platform to elevate the technical skills of students. This symposium, hosted by the department, serves as a dynamic arena for knowledge exchange and skill enhancement, fostering a vibrant community of Information Technology enthusiasts.
+
+
+1.2 Main event name vs institution
+
+Official event name (used everywhere):
+Example: ICON '26 – National Level Technical Symposium
+New official event name: ICON '26 – A National Level Technical Symposium
+Short name (for big hero text / logo line):
+Example: ICON '26
+New short name: ICON '26
+Tagline (one short line):
+Example: A National Level Technical Symposium
+New tagline: A National Level Technical Symposium
+2. Header & Navigation
+2.1 Navbar link labels
+File: Navbar.js
+
+links array:
+Currently: Home, TechFusion, Events, Legion, Contact
+New label for /icon page (About page for ICON '26): Home, Icon, Events, Team, Contact
+Any other label changes? (e.g. Events → Tracks?): None
+Logo text (“CRESCENT”, institute name) looks generic and likely stays the same. Confirm if you want to keep it: 
+
+Keep as is? Yes / No
+If No, new text: I don't want to keep it. I want to add other logos instead. The three logos have been put in the logos folder under public.
+
+I want the navbar to be as follows:
+On laptop sized devices : icon logo, crescent logo, then SIT logo. Then have the links array.
+
+On mobile sized devices : crescent logo, then a hamburger menu. put icon logo on top of hamburger menu. then use the links array, and finally at bottom, the SIT logo.
+
+3. Footer
+File: Footer.js
+
+3.1 Footer brand block
+
+Big footer logo text
+Current: TECHFUSION 26
+New: ICON '26
+Description lines
+Current:
+Department of Information Technology
+B.S. Abdur Rahman Crescent Institute of Science and Technology
+New (if you want to change wording or add “National Level Technical Symposium”):
+No changes, keep as is.
+
+3.2 Footer navigation labels
+
+Navigate links:
+Home (/) — change label? : don't change.
+Legacy '25 (/techfusion) — new label (About ICON '26?): About ICON
+Events 26 (/events) — new label: Events
+The Team (/legion) — new label: Team
+Contact (/contact) — change? no change
+Register (/register) — change? Register Now
+
+3.3 Footer bottom text
+
+Copyright line
+Current: © 2026 Techgusion — Dept. of IT, B.S. Abdur Rahman Crescent Institute
+New (likely with ICON ‘26 and 2026): © 2026 ICON '26 — Dept. of IT, B.S. Abdur Rahman Crescent Institute of Science and Technology
+
+4. Home Page (/) – Hero & Overview
+File: page.js
+
+4.1 Event date & countdown
+
+Event date constant (EVENT_DATE)
+Current: March 28, 2026
+New ICON ‘26 date and time (YYYY-MM-DDThh:mm:ss): April 10, 2026 , 09 AM
+4.2 Hero badges
+
+remove hero badges
+
+4.3 Hero main title
+
+Glitch title text (currently “TECHFUSION” with TECH and FUSION)
+New main word(s) you want displayed (e.g. ICON and ’26 or just ICON):
+
+no glitch. display icon logo from the public/logos folder.
+
+4.4 Hero subheading / description
+
+Main paragraph under hero title
+Current: intro about “brightest minds in IT, CSE, Cybersecurity, AI&DS, IoT, EEE, ECE & E&I showcase their groundbreaking projects.”
+New paragraph describing ICON ‘26 as a national-level technical symposium:
+New text: 
+A national-level technical symposium by the Department of Information Technology, Crescent — celebrating technology, creativity, and the spirit of problem-solving.
+
+4.5 Primary buttons
+
+Button 1 (link: /register)
+Current label: Enter The Game
+New label: Click to compete
+Button 2 (link: /techfusion)
+Current label: About TechFusion
+New label (e.g. About ICON '26): About ICON
+
+4.6 Stats section
+
+stats array:
+
+Stat 1
+Current: 5+ / New Domains
+New number: 8 / New label: Exciting events
+Stat 2
+Current: 1000+ / Expected Players
+New number: 300+ / New label: Expected participants
+Stat 3
+Current: ₹1L+ / 2026 Prize Pool
+New number: ₹1L / New label (e.g. Total Prize Pool): Total Prize Pool
+
+4.7 Domains preview block
+
+domains array (home page preview linking to /events):
+
+For each domain, confirm/update:
+
+Change to only two domains.
+
+First box: Technical Events. 
+Description : Code. Compete. Conquer. Technical challenges where logic wins the game.
+
+Second box: Non-Technical Events.
+Description: ICON's Non-Tech Arena - Where fun meets strategy.
+
+
+5. “TechFusion” Page (/techfusion) – Will Become “About ICON ’26”
+File: page.js
+
+This page is currently a “Legacy ‘25” archive. For ICON ‘26 we can repurpose it as an “About ICON ’26” page.
+
+5.1 Hero section
+
+Player badge
+Current: LEGACY ARCHIVE
+New (e.g. ABOUT ICON '26): ABOUT ICON '26
+Main heading
+Currently shows TECHFUSION '25
+New main heading text for ICON ‘26: Use the icon logo
+Hero paragraph
+Current: about “monumental success of the 2025 Expo”
+New paragraph describing ICON ‘26: _________________________________
+Hero pills
+Current: Completed: March 2025, 500+ Players, 15+ Winning Teams
+New 2–3 highlight pills (text only):
+Pill 1: 24th edition
+delete pills 2 and 3
+
+5.2 About text blocks
+
+Three paragraphs under “THE LEGACY OF IT EXPO 2025”:
+
+Section heading text
+New heading (e.g. ABOUT ICON '26 or ICON '26 – NATIONAL LEVEL TECH SYMPOSIUM): ICON '26 – NATIONAL LEVEL TECH SYMPOSIUM
+Paragraph 1 (currently about TechFusion ‘25 platform)
+New text: ICON is the Department of Information Technology’s flagship national-level symposium, bringing together bright minds from across the country to compete, collaborate, and create. Founded as a platform to unleash student talent and technical prowess, ICON blends technical challenges, workshops, and non-technical events to foster innovation, creativity, and interdisciplinary thinking. 
+Paragraph 2 (about spirit of advancement & collaboration)
+New text or keep similar? From algorithm battles and tech quests to stage showcases and strategy games, ICON has grown into a dynamic arena that celebrates the spirit of learning, leadership, and forward-thinking in the ever-evolving world of technology.
+
+remove para 3
+
+5.3 Stats cards on right (branches invited, tech domains, free for schools)
+
+remove stat cards. add photo instead(public/photos/about.jpg)
+
+highlights array (title + desc):
+
+For each of the 6 highlights, provide new title and description (or confirm you want to keep the structure but reword to ICON ‘26):
+
+Highlight 1 – title: National Level Symposium / description: ICON brings together the brightest minds from IT, CSE, Cybersecurity, AI & DS and beyond — competing in a thrilling mix of technical and non-technical events that test both skill and spirit.
+Highlight 2 – title: Open to All / description: Open to UG / PG students from engineering colleges all across India.
+Highlight 3 – title: Networking / description: Connect with fellow innovators and industry professionals to explore career opportunities.
+Highlight 4 – title: Big Prizes / description: With prize pool of over Rupees 1 Lakh, win exciting cash prizes, internship oppurtunities, voucher and other goodies!
+
+5.5 Guidelines & links
+
+Section badge HOW TO PARTICIPATE – keep or change? __________________
+“QUICK GUIDELINES” list: most are generic; indicate if you want to change any rules (team size, fee, etc.):
+Changes (if any): 
+Online registration on UnStop is mandatory.
+Join the WhatsApp group (link in the events page) for updates.
+Cross-college teams are allowed.
+Participation certificates awarded to all participants.
+Lunch and refreshments will be provided.
+Transport should be arranged by participants themselves. 
+Accomodation will be provided on a first-come basis.
+
+PPT download link (Google Drive link in the button):
+no link. remove button. 
+
+CTA button label
+Current: Register Now
+New: Register Now
+
+6. Events Page (/events) – Domains, Eligibility, Rules
+File: page.js
+
+6.1 Hero heading & text
+
+Main heading currently: TECH FUSION 26
+New hero title for ICON ‘26: _________________________________
+Hero paragraph
+Current: “5 Domains. 5 Games. The Stakes have been raised for 2026...”
+New description: Exciting competitions await! The Stakes have been raised for 2026...
+Badge CHOOSE YOUR GAME – keep or rename? CHOOSE YOUR EVENT
+Small pill text: Click to Flip Cards – keep or change? : remove pill
+6.2 Domain cards content (front & back)
+
+domains array: for each domain, supply final text:
+
+For each of: aiml, web, cyber, iot, innovation
+
+For each domain d:
+
+Short title (e.g. AI / ML / DS): _________________________________
+Full title (e.g. Artificial Intelligence, Machine Learning & Data Science): _________________________________
+Short description (front card text): _________________________________
+Bulleted list (“WHAT YOU CAN DO”, 3 bullets):
+Bullet 1: _________________________________
+Bullet 2: _________________________________
+Bullet 3: _________________________________
+CTA sentence (back card bottom line): _________________________________
+If ICON ’26 has different tracks, list them here and we’ll update IDs/titles accordingly.
+
+Two big hero pills : Technical Events and Non technical events.
+Have a 4 box carousel under each.
+
+Title: Game of Codes
+Tagline: Crack. Code. Conquer.
+Short description (front card text):
+A thrilling coding quest where every solved puzzle takes you one step closer to victory.
+
+Back card text:
+Compete in a series of coding, debugging, and logic challenges — a digital treasure hunt that tests your mind, speed, and teamwork.
+
+Bullet 1: Solve coding mysteries, logic puzzles, and debugging rounds to unlock clues.
+
+Bullet 2: Each level brings a new challenge — code smart, move fast.
+
+Bullet 3: Only the ultimate coder will reach the final treasure.
+CTA sentence: Ready to play the Game of Codes? The hunt begins!
+
+Title: Paper Prez
+Tagline: Where Ideas Speak Louder Than Words.
+Short description (front card text):
+Showcase your research, innovations, and technical brilliance — one paper at a time.
+
+Back card text:
+Present your paper before an expert panel and stand a chance to get recognized for originality, clarity, and impact.
+
+Bullet 1: Choose your tech domain and present a paper that inspires innovation.
+
+Bullet 2: Get evaluated by academicians and industry experts.
+
+Bullet 3: Compete to prove your idea can change the game.
+CTA sentence: Put your thoughts to paper — and your paper on the map.
+
+Title: UI Vision
+Tagline: Design Beyond Pixels.
+Short description (front card text):
+Bring your creativity to life through stunning and intuitive UI designs.
+
+Back card text:
+Given a theme, design a user interface that’s visually striking, functional, and futuristic.
+
+Bullet 1: Interpret real-world themes into sleek, user-friendly interfaces.
+
+Bullet 2: Showcase your creativity, layout sense, and design logic.
+
+Bullet 3: Impress the judges with innovation, clarity, and aesthetic precision.
+CTA sentence: Dream it. Design it. Display it at UI Vision!
+
+Title: BI Blitz
+Tagline: Bid. Build. Blitz.
+Short description (front card text):
+An adrenaline-packed analytics challenge where data meets daring decisions.
+
+Back card text:
+Bid on mystery profiles, analyze their data, and create insightful dashboards before time runs out.
+
+Bullet 1: Use your points to strategically bid on data sets or “people.”
+
+Bullet 2: Build visual dashboards using your analytical and design skills.
+
+Bullet 3: Fast decisions, smart visuals — only one team can dominate the data.
+CTA sentence: Your dashboards decide your destiny — play smart in BI Blitz!
+
+🎮 NON-TECHNICAL EVENTS
+5
+
+Title: Connexions
+Tagline: Guess It Before They Do!
+Short description (front card text):
+Decode the images, connect the dots, and guess the phrase before anyone else.
+
+Back card text:
+A fun and fast-paced picture-guessing challenge where observation meets quick wit.
+
+Bullet 1: Solve visual clues that hide famous phrases, movies, or idioms.
+
+Bullet 2: Compete in multiple rounds of increasing difficulty.
+
+Bullet 3: Speed and creativity are your keys to survival.
+CTA sentence: Think fast — connect faster!
+
+Title: Talent Hunt
+Tagline: Unleash the Star Within.
+Short description (front card text):
+A stage that celebrates every form of talent — from singing to mimicry.
+
+Back card text:
+Step into the spotlight and let your talent shine through. The crowd awaits your performance!
+
+Bullet 1: Showcase singing, dancing, mimicry, or any unique skill.
+
+Bullet 2: Perform solo or in teams — the stage is yours.
+
+Bullet 3: Win the hearts of judges and the audience alike.
+CTA sentence: Dare to shine? The ICON stage is waiting!
+
+Title: Esports Arena
+Tagline: Play. Survive. Dominate.
+Short description (front card text):
+The ultimate gaming showdown featuring PUBG and Free Fire.
+
+Back card text:
+Battle it out in an intense Esports tournament where only the best squads make it to the final circle.
+
+Bullet 1: Squad up and fight for victory in your chosen battleground.
+
+Bullet 2: Strategic teamwork and survival instincts will define your win.
+
+Bullet 3: Streamed matches, roaring crowds, and epic finishes await.
+CTA sentence: Ready. Aim. Win. Welcome to the Esports Arena.
+
+Title: Prompt Engineering
+Tagline: Shape the Web with Words.
+Short description (front card text):
+Transform a dull website into a masterpiece — using only your prompts.
+
+Back card text:
+A creative challenge where you’ll revamp a given website with limited prompts to achieve the best AI-driven makeover.
+
+Bullet 1: Use concise, clever prompts to generate a new look and layout.
+
+Bullet 2: Limited attempts — precision matters more than perfection.
+
+Bullet 3: Blend creativity, logic, and linguistic skill to stand out.
+CTA sentence: Prompt your way to perfection — one command at a time!
+
+
+6.3 Eligibility, Rules, Prizes text
+
+Review and adjust if needed:
+
+Eligibility bullets (UG/PG India-wide, fee, school free, etc.)
+Any changes to: who can participate, fee, free-for-school policy?
+New bullets (if different from current): _________________________________
+Common Rules bullets (team size, one project per team, own laptop, etc.)
+Any rule changes? _________________________________
+Prizes & Perks bullets (prize structure, certificates, refreshments, WhatsApp group, PPT format)
+Any changes? _________________________________
+7. Register Page (/register)
+File: page.js
+
+Most of this is structural (fee cards, domain selection, WhatsApp note). Provide any differences for ICON ‘26:
+
+remove everything. just copy the quick guidelines section from the about icon page.
+
+
+200 rs per student. regardless of team or solo.
+
+
+Registration form link
+
+Button link target: currently https://forms.google.com (placeholder)
+New actual Google Form URL: _________________________________
+Button label
+Current: ○ Proceed to Registration on UnStop
+New: _________________________________
+
+8. Contact Page (/contact)
+File: page.js
+
+8.1 Hero heading & text
+
+Hero paragraph
+Current: Have questions about Techgusion '25? Reach out to us directly.
+New: Have questions about ICON '26? Reach out to us.
+
+8.2 Contact cards
+
+contacts array:
+
+GENERAL SECRETARY
+MOHAMMED HIZBULLAH
+8681050407
+
+JOINT SECRETARY
+HARINI G
+9841010130
+
+JOINT SECRETARY
+AVANTHIKA A
+7904789580
+
+TREASURER
+IZHAAN WASEEM. M
+824863259
+
+GitHub / resource link
+
+remove GitHub
+
+8.3 Location block
+
+Institution name – likely same, unless you want to add “(Host of ICON '26)”
+Event Date field
+Current: March 28, 2025
+New: April 10, 2026
+
+9. Team Page (/legion)
+File: page.js
+
+change the legion to The team
+
+9.1 Hero paragraph
+
+Current: Meet the masterminds behind Techgusion '25 — ...
+New: Meet the team behind ICON '26 
+9.2 Faculty list
+remove the tagline
+change faculty advisors to faculty
+faculty array (4 members: name, role, dept, expertise):
+
+For each faculty member, confirm/update:
+
+Faculty 1:
+Dr. N.Prakash
+Professor & Head / Department of Information Technology
+
+Faculty2:
+Dr. Mohammed Wajid Khan
+Assistant Professor / Department of Information Technology
+
+Faculty 3:
+Dr. P. Latchoumy 
+Associate Professor / Department of Information Technology
+
+9.3 Student organizers
+
+students array (IDs, names, roles):
+
+Provide final list for ICON ‘26:
+
+For each student:
+
+Number (display only): ______
+Name: _________________________________
+Role label (e.g. Event Coordinator, Web & Design Lead): _________________________________
+(You can send this as a table or list; I’ll map it into the array.)
+remove the numbers. i ll update roles later.
+
+GENERAL SECRETARY
+MOHAMMED HIZBULLAH
+B. Tech IT/ IV Year
+JOINT SECRETARY
+HARINI G
+B. Tech IT/ IV Year
+JOINT SECRETARY
+AVANTHIKA A
+B. Tech IT/ IV Year
+TREASURER
+IZHAAN WASEEM. M
+B. Tech IT/ IV Year
+
+Executive members
+
+RISHIKA RAI
+B. Tech IT/ IV Year
+SWETHA K
+B. Tech IT/ IV Year
+SIDDIQUE S A
+B. Tech IT/ IV Year
+JERLIN SIBIYAL
+B. Tech IT/ IV Year
+NIYAJUDEEN N
+B. Tech IT/ IV Year
+SHRINIVAS J R
+B. Tech IT/ IV Year
+NOORUL AFREEN M.T
+B. Tech IT/ IV Year
+MD SAIFUDDEEN S
+B. Tech IT/ IV Year
+MD FAZHULULLA S
+B. Tech IT/ IV Year
+EXECUTIVE COMMITTEE MEMBERS
+ABIRAMA VARSHINI V
+B. Tech IT/ IV Year
+ABIRAMI M
+B. Tech IT/ IV Year
+AFRAA N
+M. Tech IT/ II Year
+
+
+10. Backend / Download Naming
+File: route.js
+
+since my registration is going to be on unstop, remove the backend. 
+
+Excel filename in Content-Disposition header
+Current: "techgusion_registrations.xlsx"
+New desired filename (e.g. icon26_registrations.xlsx): _________________________________
+File: route.js
+
+Column headers & structure are generic; no event name. If you want to add a fixed column like “Event Name” or “Edition” for future reuse, specify:
+Add extra column? Name: _________________________________
+
+11. Anything Else
+If there are any extra pieces you know you want (e.g. sponsors section, special note about national-level status, eligibility limitations, etc.), describe them here and I’ll tell you where to plug them in:
+
+Additional notes / new sections: _______________________________________________
+If you fill this in (even partially), paste your answers back to me. I’ll then systematically update all the relevant files to transform the site into ICON ’26 while keeping the current colors and backgrounds.
+
+i ll update if anything else. i ll provide unstop url later.
