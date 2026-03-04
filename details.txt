@@ -26,7 +26,7 @@ New tagline: A National Level Technical Symposium
 File: Navbar.js
 
 links array:
-Currently: Home, TechFusion, Events, Legion, Contact
+Currently: Home, ICON, Events, Team, Contact
 New label for /icon page (About page for ICON '26): Home, Icon, Events, Team, Contact
 Any other label changes? (e.g. Events → Tracks?): None
 Logo text (“CRESCENT”, institute name) looks generic and likely stays the same. Confirm if you want to keep it: 
@@ -45,7 +45,7 @@ File: Footer.js
 3.1 Footer brand block
 
 Big footer logo text
-Current: TECHFUSION 26
+Current: ICON '26
 New: ICON '26
 Description lines
 Current:
@@ -58,9 +58,9 @@ No changes, keep as is.
 
 Navigate links:
 Home (/) — change label? : don't change.
-Legacy '25 (/techfusion) — new label (About ICON '26?): About ICON
+About (/techfusion) — label: About ICON
 Events 26 (/events) — new label: Events
-The Team (/legion) — new label: Team
+The Team (/team) — new label: Team
 Contact (/contact) — change? no change
 Register (/register) — change? Register Now
 

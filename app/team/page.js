@@ -51,7 +51,7 @@ const students = [
     { name: 'Afraa N', role: 'Executive Committee Member', year: 'M. Tech IT / II Year', sym: '○', color: '#a855f7' },
 ];
 
-export default function LegionPage() {
+export default function TeamPage() {
     useEffect(() => {
         const observer = new IntersectionObserver(
             entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
@@ -133,8 +133,6 @@ export default function LegionPage() {
                                     {f.role}
                                 </p>
                                 <p style={{ color: 'var(--text-muted)', fontSize: '0.8rem', marginBottom: '1.2rem' }}>{f.dept}</p>
-
-                                {/* Expertise tags removed as per request */}
                             </Card3D>
                         ))}
                     </div>

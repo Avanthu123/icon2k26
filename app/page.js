@@ -173,7 +173,7 @@ export default function HomePage() {
             >
               <span>□</span> Click to Compete
             </a>
-            <Link href="/techfusion" className="btn-secondary">
+            <Link href="/icon" className="btn-secondary">
               <span>△</span> About ICON
             </Link>
           </div>

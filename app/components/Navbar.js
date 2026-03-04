@@ -10,9 +10,9 @@ export default function Navbar() {
 
     const links = [
         { href: '/', label: 'Home', sym: '○' },
-        { href: '/techfusion', label: 'About Icon', sym: '△' },
+        { href: '/icon', label: 'About Icon', sym: '△' },
         { href: '/events', label: 'Events', sym: '□' },
-        { href: '/legion', label: 'Team', sym: '○' },
+        { href: '/team', label: 'Team', sym: '○' },
         { href: '/contact', label: 'Contact', sym: '△' },
     ];
 

@@ -9,7 +9,7 @@ const highlights = [
         sym: '○',
         title: 'National Level Symposium',
         desc:
-            'ICON brings together the brightest minds from IT, CSE, Cybersecurity, AI & DS and beyond — competing in a thrilling mix of technical and non-technical events that test both skill and spirit.',
+            "ICON brings together the brightest minds from IT, CSE, Cybersecurity, AI & DS and beyond — competing in a thrilling mix of technical and non-technical events that test both skill and spirit.",
     },
     {
         sym: '△',
@@ -29,7 +29,7 @@ const highlights = [
     },
 ];
 
-export default function TechFusionPage() {
+export default function IconPage() {
     useEffect(() => {
         const observer = new IntersectionObserver(
             entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }),
@@ -73,7 +73,7 @@ export default function TechFusionPage() {
                 </div>
             </section>
 
-            {/* ABOUT TECHFUSION */}
+            {/* ABOUT ICON */}
             <section className="section">
                 <div className="container">
                     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '4rem', alignItems: 'center' }}>
@@ -135,7 +135,7 @@ export default function TechFusionPage() {
 
             <div className="glow-line glow-line-teal" style={{ margin: '0 2rem' }} />
 
-            {/* PPT/GUIDELINES */}
+            {/* GUIDELINES */}
             <section className="section">
                 <div className="container">
                     <div style={{ maxWidth: 700, margin: '0 auto', textAlign: 'center' }}>
