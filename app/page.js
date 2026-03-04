@@ -321,7 +321,7 @@ export default function HomePage() {
         />
         <div className="container" style={{ textAlign: 'center', position: 'relative', zIndex: 1 }}>
           <h2 className="section-title reveal">
-            READY TO <span className="highlight">PLAY</span>?
+            READY TO <span className="highlight">COMPETE</span>?
           </h2>
           <p
             style={{
